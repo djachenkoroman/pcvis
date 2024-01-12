@@ -74,9 +74,9 @@ def pcshow(xs, ys, zs):
     data = [go.Scatter3d(x=xs, y=ys, z=zs,
                          mode='markers')]
     fig = visualize_rotate(data)
-    fig.update_traces(marker=dict(size=10,
-                                  line=dict(width=3,
-                                            color='DarkSlateGrey')),
+    fig.update_traces(marker=dict(size=30,
+                                  line=dict(width=7,
+                                            color='Black')),
                       selector=dict(mode='markers'))
     fig.show()
 
