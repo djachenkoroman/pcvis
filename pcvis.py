@@ -114,8 +114,8 @@ def pcshow_xyzl(data, x_column=0, y_column=1, z_column=2, label_column=6, frac=1
     data = [go.Scatter3d(x=xs, y=ys, z=zs, mode='markers')]
     fig = visualize_rotate(data)
     fig.update_traces(marker=dict(
-                        size=10,
-                        line=dict(width=3,
+                        size=20,
+                        line=dict(width=7, color='blue'),
                         color=[cdict[label] for label in labels]),
                       selector=dict(mode='markers'))
     fig.show()
