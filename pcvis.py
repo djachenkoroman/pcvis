@@ -133,9 +133,7 @@ def pcshow_xyzrgb(data, x_column=0, y_column=1, z_column=2, r_column=3, g_column
     colors = colors[idx]
     data = [go.Scatter3d(x=xs, y=ys, z=zs, mode='markers')]
     fig = visualize_rotate(data)
-    fig.update_traces(marker=dict(
-                        size=2,
-                        color=colors),
+    fig.update_traces(marker=dict(color=[cdict[label] for label in labels], size=4, line=dict(color='Black', width=2)),
                       selector=dict(mode='markers'))
     fig.show()
 
